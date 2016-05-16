@@ -13,8 +13,8 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-mtx_P = X*theta;
-mtx_Sum = (mtx_P - y).^2;
+mtx_XbyTheta = X*theta;
+mtx_Sum = (mtx_XbyTheta - y).^2;
 
 J = 1/(2*m) * sum(mtx_Sum); 
 
